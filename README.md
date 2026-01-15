@@ -44,7 +44,7 @@ src
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/JavaVanilla-Microservices.git
+git clone https://github.com/viniciusfonseca19/JavaVanilla-Microservices-dio.git
 cd JavaVanilla-Microservices
 
 2. Construa e suba os containers:
