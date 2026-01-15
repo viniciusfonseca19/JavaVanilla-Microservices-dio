@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  users-service:
+    build: ./users-service
+    container_name: users-service
+    ports:
+      - "8081:8081"
+
+  products-service:
+    build: ./products-service
+    container_name: products-service
+    ports:
+      - "8082:8082"
+
+  gateway:
+    build: ./gateway
+    container_name: gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - users-service
+      - products-service
